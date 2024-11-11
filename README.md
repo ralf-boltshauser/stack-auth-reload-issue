@@ -7,8 +7,12 @@ This is an example of the issue I described. The buttons should do exactly the s
 - Setup a db (check env)
 - Connect Stack Auth Project
 
+
+
 ```bash
 pnpm install
+pnpx prisma generate
+pnpx prisma db push
 pnpm run dev
 ```
 
