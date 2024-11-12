@@ -1,8 +1,9 @@
 import Link from "next/link";
 export default function Home() {
   return (
-    <div>
-      <Link href="/protected">Protected</Link>
+    <div className="flex flex-col gap-4">
+      <Link href="/protected">Reload Issue</Link>
+      <Link href="/infinite-loop">Infinite Loop</Link>
     </div>
   );
 }
