@@ -5,6 +5,7 @@ export default function Home() {
       <Link href="/protected">Reload Issue</Link>
       <Link href="/infinite-loop">Infinite Loop</Link>
       <Link href="/unprotected">Unprotected</Link>
+      <Link href="/boring-empty">Boring Empty Page</Link>
     </div>
   );
 }
