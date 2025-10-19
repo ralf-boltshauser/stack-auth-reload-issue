@@ -7,9 +7,18 @@ This is an example of the issue I described. The buttons should do exactly the s
 - Setup a db (check env)
 - Connect Stack Auth Project
 
-
+```bash
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+```
 
 ```bash
+docker run --name mydb-postgres \
+  -e POSTGRES_USER=johndoe \
+  -e POSTGRES_PASSWORD=randompassword \
+  -e POSTGRES_DB=mydb \
+  -p 5432:5432 \
+  -d postgres:latest
+
 pnpm install
 pnpx prisma generate
 pnpx prisma db push
